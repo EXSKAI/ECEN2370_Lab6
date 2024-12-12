@@ -96,12 +96,12 @@ void initGameScreen(void) {
 
     LCD_SetTextColor(LCD_COLOR_YELLOW);
     LCD_SetFont(&Font12x12);
-    for(int i = 0; i < 4; i++){
-        LCD_DisplayChar(Recording_xPos+i*10, Recording_yPos, Recording[i]);
-    }
-//    for(int i = 0; i < 9; i++){
+//    for(int i = 0; i < 4; i++){
 //        LCD_DisplayChar(Recording_xPos+i*10, Recording_yPos, Recording[i]);
 //    }
+    for(int i = 0; i < 9; i++){
+        LCD_DisplayChar(Recording_xPos+i*10, Recording_yPos, Recording[i]);
+    }
 
     LCD_SetFont(&Font16x24);
     LCD_SetTextColor(LCD_COLOR_BLUE);
